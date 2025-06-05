@@ -1,17 +1,24 @@
 Package: naRcissique
-Title: An Amazing Shiny App
+Title: naRcissique, le package qui parle de lui-même
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+    person("Simon", "Coulombe", , "AUTHOR@MAIL.COM", role = c("aut", "cre"))
+Description: Un package qui va commencer par montrer son environnement, ses visiteurs, etc. avant de s'intéresser au vaste monde
+License: MIT + file LICENSE
 Imports: 
     config,
     golem,
+    magrittr,
+    pkgload,
     shiny
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+VignetteBuilder: knitr
